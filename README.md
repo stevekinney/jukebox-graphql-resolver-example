@@ -1,3 +1,3 @@
 # Jukebox
 
-A super-simple GraphQL demonstration application.
+A super simple GraphQL demonstration application.
