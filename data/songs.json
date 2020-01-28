@@ -1,0 +1,436 @@
+[
+  { "title": "Done", "time": "4:47", "artistId": 2, "albumId": 5, "id": 1 },
+  {
+    "title": "Flesh & Electricity",
+    "time": "3:57",
+    "artistId": 2,
+    "albumId": 5,
+    "id": 2
+  },
+  {
+    "title": "West Side Story",
+    "time": "5:32",
+    "artistId": 2,
+    "albumId": 5,
+    "id": 3
+  },
+  {
+    "title": "Lost (Season One)\t",
+    "time": ":47",
+    "artistId": 2,
+    "albumId": 5,
+    "id": 4
+  },
+  {
+    "title": "Jet Fuel Can't Melt Steel Beams",
+    "time": "4:05",
+    "artistId": 2,
+    "albumId": 5,
+    "id": 5
+  },
+  {
+    "title": "Trepidation",
+    "time": "3:33",
+    "artistId": 2,
+    "albumId": 5,
+    "id": 6
+  },
+  {
+    "title": "Stove Lighter",
+    "time": "4:20",
+    "artistId": 2,
+    "albumId": 5,
+    "id": 7
+  },
+  {
+    "title": "Song For Charlie",
+    "time": "6:46",
+    "artistId": 2,
+    "albumId": 5,
+    "id": 8
+  },
+  {
+    "title": "The Opener",
+    "time": "3:40",
+    "artistId": 2,
+    "albumId": 2,
+    "id": 9
+  },
+  {
+    "title": "How to Socialise & Make Friends",
+    "time": "3:14",
+    "artistId": 2,
+    "albumId": 2,
+    "id": 10
+  },
+  {
+    "title": "The Face Of God",
+    "time": "3:51",
+    "artistId": 2,
+    "albumId": 2,
+    "id": 11
+  },
+  { "title": "Anna", "time": "5:53", "artistId": 2, "albumId": 2, "id": 12 },
+  {
+    "title": "Sagan-Indiana",
+    "time": "3:55",
+    "artistId": 2,
+    "albumId": 2,
+    "id": 13
+  },
+  {
+    "title": "The Omen",
+    "time": "3:58",
+    "artistId": 2,
+    "albumId": 2,
+    "id": 14
+  },
+  {
+    "title": "Animal & Real",
+    "time": "3:47",
+    "artistId": 2,
+    "albumId": 2,
+    "id": 15
+  },
+  {
+    "title": "UFO Lighter",
+    "time": "4:32",
+    "artistId": 2,
+    "albumId": 2,
+    "id": 16
+  },
+  {
+    "title": "I've Got You",
+    "time": "5:24",
+    "artistId": 2,
+    "albumId": 2,
+    "id": 17
+  },
+  {
+    "title": "I Should Live In Salt",
+    "time": "4:08",
+    "artistId": 1,
+    "albumId": 1,
+    "id": 18
+  },
+  { "title": "Demons", "time": "3:31", "artistId": 1, "albumId": 1, "id": 19 },
+  {
+    "title": "Don't Swallow The Cap",
+    "time": "4:45",
+    "artistId": 1,
+    "albumId": 1,
+    "id": 20
+  },
+  {
+    "title": "Fireproof",
+    "time": "2:58",
+    "artistId": 1,
+    "albumId": 1,
+    "id": 21
+  },
+  {
+    "title": "Sea Of Love",
+    "time": "3:41",
+    "artistId": 1,
+    "albumId": 1,
+    "id": 22
+  },
+  {
+    "title": "Heavenfaced",
+    "time": "4:23",
+    "artistId": 1,
+    "albumId": 1,
+    "id": 23
+  },
+  {
+    "title": "This Is The Last Time",
+    "time": "4:43",
+    "artistId": 1,
+    "albumId": 1,
+    "id": 24
+  },
+  {
+    "title": "Graceless",
+    "time": "4:35",
+    "artistId": 1,
+    "albumId": 1,
+    "id": 25
+  },
+  { "title": "Slipped", "time": "4:25", "artistId": 1, "albumId": 1, "id": 26 },
+  {
+    "title": "I Need My Girl",
+    "time": "4:05",
+    "artistId": 1,
+    "albumId": 1,
+    "id": 27
+  },
+  {
+    "title": "Humiliation",
+    "time": "5:00",
+    "artistId": 1,
+    "albumId": 1,
+    "id": 28
+  },
+  {
+    "title": "Pink Rabbits",
+    "time": "4:36",
+    "artistId": 1,
+    "albumId": 1,
+    "id": 29
+  },
+  {
+    "title": "Hard To Find",
+    "time": "4:13",
+    "artistId": 1,
+    "albumId": 1,
+    "id": 30
+  },
+  {
+    "title": "It's A Hit",
+    "time": "4:28",
+    "artistId": 3,
+    "albumId": 6,
+    "id": 31
+  },
+  {
+    "title": "Does He Love You?\t",
+    "time": ":14",
+    "artistId": 3,
+    "albumId": 6,
+    "id": 32
+  },
+  {
+    "title": "Portions For Foxes",
+    "time": "4:45",
+    "artistId": 3,
+    "albumId": 6,
+    "id": 33
+  },
+  {
+    "title": "Ripchord",
+    "time": "2:09",
+    "artistId": 3,
+    "albumId": 6,
+    "id": 34
+  },
+  { "title": "I Never", "time": "4:33", "artistId": 3, "albumId": 6, "id": 35 },
+  {
+    "title": "The Absence Of God",
+    "time": "3:55",
+    "artistId": 3,
+    "albumId": 6,
+    "id": 36
+  },
+  {
+    "title": "Accidntel Deth",
+    "time": "4:26",
+    "artistId": 3,
+    "albumId": 6,
+    "id": 37
+  },
+  {
+    "title": "More Adventurous",
+    "time": "3:27",
+    "artistId": 3,
+    "albumId": 6,
+    "id": 38
+  },
+  {
+    "title": "Love And War (11/11/46)\t",
+    "time": ":36",
+    "artistId": 3,
+    "albumId": 6,
+    "id": 39
+  },
+  {
+    "title": "A Man/Me/Then Jim",
+    "time": "5:24",
+    "artistId": 3,
+    "albumId": 6,
+    "id": 40
+  },
+  {
+    "title": "It Just Is",
+    "time": "2:26",
+    "artistId": 3,
+    "albumId": 6,
+    "id": 41
+  },
+  {
+    "title": "You Had Your Soul With You",
+    "time": "3:26",
+    "artistId": 1,
+    "albumId": 4,
+    "id": 42
+  },
+  {
+    "title": "Quiet Light",
+    "time": "4:15",
+    "artistId": 1,
+    "albumId": 4,
+    "id": 43
+  },
+  {
+    "title": "Roman Holiday",
+    "time": "3:35",
+    "artistId": 1,
+    "albumId": 4,
+    "id": 44
+  },
+  {
+    "title": "Oblivions",
+    "time": "4:14",
+    "artistId": 1,
+    "albumId": 4,
+    "id": 45
+  },
+  {
+    "title": "The Pull Of You",
+    "time": "3:59",
+    "artistId": 1,
+    "albumId": 4,
+    "id": 46
+  },
+  {
+    "title": "Hey Rosey",
+    "time": "4:14",
+    "artistId": 1,
+    "albumId": 4,
+    "id": 47
+  },
+  {
+    "title": "I Am Easy To Find",
+    "time": "4:31",
+    "artistId": 1,
+    "albumId": 4,
+    "id": 48
+  },
+  {
+    "title": "Her Father In The Pool",
+    "time": "1:03",
+    "artistId": 1,
+    "albumId": 4,
+    "id": 49
+  },
+  {
+    "title": "Where Is Her Head",
+    "time": "4:42",
+    "artistId": 1,
+    "albumId": 4,
+    "id": 50
+  },
+  {
+    "title": "Not In Kansas",
+    "time": "6:45",
+    "artistId": 1,
+    "albumId": 4,
+    "id": 51
+  },
+  {
+    "title": "So Far So Fast  ",
+    "time": "6:37",
+    "artistId": 1,
+    "albumId": 4,
+    "id": 52
+  },
+  {
+    "title": "Dust Swirls In Strange Light  ",
+    "time": "3:19",
+    "artistId": 1,
+    "albumId": 4,
+    "id": 53
+  },
+  {
+    "title": "Hairpin Turns",
+    "time": "4:28",
+    "artistId": 1,
+    "albumId": 4,
+    "id": 54
+  },
+  { "title": "Rylan", "time": "3:44", "artistId": 1, "albumId": 4, "id": 55 },
+  {
+    "title": "Underwater",
+    "time": "1:21",
+    "artistId": 1,
+    "albumId": 4,
+    "id": 56
+  },
+  {
+    "title": "Light Years",
+    "time": "3:33",
+    "artistId": 1,
+    "albumId": 4,
+    "id": 57
+  },
+  {
+    "title": "The Good That Won't Come Out",
+    "time": "4:31",
+    "artistId": 3,
+    "albumId": 3,
+    "id": 58
+  },
+  {
+    "title": "Paint's Peeling",
+    "time": "3:20",
+    "artistId": 3,
+    "albumId": 3,
+    "id": 59
+  },
+  {
+    "title": "The Execution of All Things",
+    "time": "4:13",
+    "artistId": 3,
+    "albumId": 3,
+    "id": 60
+  },
+  { "title": "So Long", "time": "5:27", "artistId": 3, "albumId": 3, "id": 61 },
+  {
+    "title": "Capturing Moods",
+    "time": "3:35",
+    "artistId": 3,
+    "albumId": 3,
+    "id": 62
+  },
+  {
+    "title": "A Better Son/Daughter",
+    "time": "4:39",
+    "artistId": 3,
+    "albumId": 3,
+    "id": 63
+  },
+  {
+    "title": "Hail to Whatever You Found in the Sunlight That Surrounds You",
+    "time": "3:20",
+    "artistId": 3,
+    "albumId": 3,
+    "id": 64
+  },
+  {
+    "title": "My Slumbering Heart",
+    "time": "5:36",
+    "artistId": 3,
+    "albumId": 3,
+    "id": 65
+  },
+  {
+    "title": "Three Hopeful Thoughts",
+    "time": "2:50",
+    "artistId": 3,
+    "albumId": 3,
+    "id": 66
+  },
+  {
+    "title": "With Arms Outstretched",
+    "time": "3:43",
+    "artistId": 3,
+    "albumId": 3,
+    "id": 67
+  },
+  {
+    "title": "Spectacular Views",
+    "time": "6:30",
+    "artistId": 3,
+    "albumId": 3,
+    "id": 68
+  }
+]

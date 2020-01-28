@@ -1,69 +1,18 @@
+const id = require('lodash/uniqueId');
 const { ApolloServer, gql } = require('apollo-server');
 
-const generateId = (() => {
-  let id = 100;
-  return () => id++;
-})();
+const generateId = () => parseInt(id(1));
 
-const artists = [
-  {
-    id: 1,
-    name: 'The National'
-  },
-  {
-    id: 2,
-    name: 'Camp Cope'
-  },
-  {
-    id: 3,
-    name: 'Rilo Kiley'
-  }
-];
-
-const albums = [
-  {
-    id: 1,
-    artistId: 1,
-    title: 'Trouble Will Find Me',
-    year: 2013
-  },
-  {
-    id: 2,
-    artistId: 2,
-    title: 'How to Socialize and Make Friends',
-    year: 2018
-  },
-  {
-    id: 3,
-    artist: 3,
-    title: 'The Execution of All Things',
-    year: 2002
-  },
-  {
-    id: 4,
-    artistId: 1,
-    title: 'I Am Easy to Find',
-    year: 2019
-  },
-  {
-    id: 5,
-    artistId: 2,
-    title: 'Camp Cope',
-    year: 2016
-  },
-  {
-    id: 6,
-    artistId: 3,
-    title: 'More Adventurous',
-    year: 2004
-  }
-];
+const artists = require('./data/artists');
+const albums = require('./data/albums');
+const songs = require('./data/songs');
 
 const typeDefs = gql`
   type Artist {
     id: Int
     name: String
     albums: [Album]
+    songs: [Song]
   }
 
   type Album {
@@ -71,18 +20,32 @@ const typeDefs = gql`
     title: String
     year: Int
     artist: Artist
+    songs: [Song]
+  }
+
+  type Song {
+    id: Int
+    title: String
+    time: Int
+    artist: Artist
+    album: Album
+    artistName: String
+    albumTitle: String
   }
 
   type Query {
     artists: [Artist!]
     albums: [Album!]
+    songs: [Song!]
     artist(id: Int!): Artist!
     album(id: Int!): Album!
+    song(id: Int!): Song!
   }
 
   type Mutation {
     addArtist(name: String!): Artist
     addAlbum(title: String!, year: Int, artistId: Int): Album
+    addSong(title: String!, time: Int, artistId: Int, albumId: Int): Song
   }
 `;
 
@@ -94,23 +57,50 @@ const resolvers = {
     albums() {
       return albums;
     },
+    songs() {
+      return songs;
+    },
     artist(root, args) {
       return artists.find(artist => artist.id === args.id);
     },
     album(root, args) {
       return albums.find(album => album.id === args.id);
+    },
+    song(root, args) {
+      return songs.find(song => song.id === args.id);
     }
   },
 
   Artist: {
-    albums: artist => {
+    albums(artist) {
       return albums.filter(album => album.artistId === artist.id);
+    },
+    songs(artist) {
+      return songs.filter(song => song.artistId === artist.id);
     }
   },
 
   Album: {
-    artist: album => {
+    artist(album) {
       return artists.find(artist => artist.id === album.artistId);
+    },
+    songs(album) {
+      return songs.filter(song => song.albumId === album.id);
+    }
+  },
+
+  Song: {
+    artist(song) {
+      return artists.find(artist => artist.id === song.artistId);
+    },
+    album(song) {
+      return albums.find(album => album.id === song.albumId);
+    },
+    artistName(song) {
+      return artists.find(artist => artist.id === song.artistId).name;
+    },
+    albumTitle(song) {
+      return albums.find(album => album.id === song.albumId).title;
     }
   },
 
@@ -125,28 +115,46 @@ const resolvers = {
 
       return artist;
     },
+
     addAlbum(_, args) {
-      const { title, year, artistId } = args;
+      const { artistId } = args;
 
       if (!artists.map(artist => artist.id).includes(artistId)) {
         throw new Error(`No such artist with the id of ${artistId}`);
       }
 
       const album = {
-        title,
-        year,
-        artistId,
+        ...args,
         id: generateId()
       };
 
       albums.push(album);
 
       return album;
+    },
+
+    addSong(_, args) {
+      if (!artists.map(artist => artist.id).includes(args.artistId)) {
+        throw new Error(`No such artist with the id of ${args.artistId}`);
+      }
+
+      if (!albums.map(album => album.id).includes(args.albumId)) {
+        throw new Error(`No such album with the id of ${args.albumId}`);
+      }
+
+      const song = {
+        ...args,
+        id: generateId()
+      };
+
+      songs.push(song);
+
+      return song;
     }
   }
 };
 
-const server = new ApolloServer({ typeDefs, resolvers, tracing: true });
+const server = new ApolloServer({ typeDefs, resolvers });
 
 server.listen().then(({ url }) => {
   console.log(`🕺 Your server is up and running: ${url}`);

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "artistId": 1,
+    "title": "Trouble Will Find Me",
+    "year": 2013
+  },
+  {
+    "id": 2,
+    "artistId": 2,
+    "title": "How to Socialize and Make Friends",
+    "year": 2018
+  },
+  {
+    "id": 3,
+    "artist": 3,
+    "title": "The Execution of All Things",
+    "year": 2002
+  },
+  {
+    "id": 4,
+    "artistId": 1,
+    "title": "I Am Easy to Find",
+    "year": 2019
+  },
+  {
+    "id": 5,
+    "artistId": 2,
+    "title": "Camp Cope",
+    "year": 2016
+  },
+  {
+    "id": 6,
+    "artistId": 3,
+    "title": "More Adventurous",
+    "year": 2004
+  }
+]
